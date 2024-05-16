@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'RobotoR';
+    src: url('../font/roboto.ttf') format('truetype'); /* Passe den Pfad entsprechend an */
+}
+
+@font-face {
+    font-family: 'RobotoM';
+    src: url('../font/robotomedium.ttf') format('truetype'); /* Passe den Pfad entsprechend an */
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../font/anton.ttf') format('truetype'); /* Passe den Pfad entsprechend an */
+}
+
+p {
+    font-family: 'RobotoR', sans-serif;
+}
+
+.medium {
+    font-family: 'RobotoM', sans-serif;
+    font-size: larger;
+}
+
+.colored {
+    font-size: larger;
+    color: #4F85A1;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+.large {
+    font-family: 'RobotoM', sans-serif;
+    font-size: x-large;
+}
+
+.navbar a {
+    font-family: 'RobotoR', sans-serif;
+    color: #36ABE0;
+}
+
+.custom-bg-primary {
+    background-color: #4F85A1;
+}
+
+.custom-bg-primary {
+    position: relative;
+}
+
+.custom-bg-primary::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    bottom: 25px;
+    width: 5px; /* Breite des senkrechten Strichs */
+    height: 80%;
+    background-color: white; /* Farbe des senkrechten Strichs */
+}
+
+.medium, .cursive {
+    padding-left: 10px; /* Platzieren Sie den Text rechts neben dem senkrechten Strich */
+}
+
+
+h2 {
+    font-family: Anton, sans-serif;
+    font-size: 2.5rem;
+    color: #4F85A1;
+}
+
+h1 {
+    font-family: Anton, sans-serif;
+    font-size: 5rem;
+    color: #4F85A1;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.background-gradient {
+    background-image: linear-gradient(to bottom, white, #f8e1c5);
+}
+
+.background-gradient2 {
+    background-image: linear-gradient(to top, white, white, white, white, #4F85A1);
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.buttonprimary {
+    background-color: #4F85A1;
+    color: white;
+    border-radius: 20px;
+    height: 50px;
+    padding: 10px 20px;
+}
+
