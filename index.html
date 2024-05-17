@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Mein Wattweiser | Start</title>
@@ -7,31 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="img/logo_small.png" class="img-fluid" alt="logo" style="width: 30%;" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html"><img src="img/logo_small.png" class="img-fluid ps-2" alt="logo" style="width: 30%;" /></a>
+    <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">HOME</a>
+            <li class="nav-item ms-3">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item ms-3">
+                <a class="nav-link" href="impressum.html">IMPRESSUM</a>
             </li>
             <!--
-            <li class="nav-item">
-                <a class="nav-link" href="#">WAS WIR MACHEN</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item ms-3">
                 <a class="nav-link" href="#">FREEBIES</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ms-3">
                 <a class="nav-link" href="#">KONTAKT</a>
             </li>
             -->
         </ul>
     </div>
 </nav>
+
+
 
 <div style="position: relative;">
     <img src="img/home_hintergrund.png" class="img-fluid w-100" alt="...">
@@ -48,11 +51,12 @@
     <p class="text-white cursive">Unsere Idee</p>
 </div>
 
-<div class="d-flex flex-column-reverse flex-md-row background-gradient">
-    <div>
-        <img src="img/bird.png" class="img-fluid h-100 flex-grow-1 object-fit-cover ms-5" alt="...">
+<div class="container-fluid background-gradient">
+    <div class="row">
+    <div class="col-3">
+        <img src="img/bird.png" class="img-fluid flex-grow-1 object-fit-cover ms-5" alt="...">
     </div>
-    <div class="col-md-6">
+    <div class="col-9">
         <h2 class="align-right pe-5">WAS IST DAS</h2>
         <h1 class="align-right pe-5">WATTENMEER</h1>
         <h2 class="align-right pe-5">EIGENTLICH?</h2>
@@ -64,14 +68,18 @@
             was es zu einem bedeutenden Schutzgebiet
             von internationaler Bedeutung macht. Seine einzigartige Natur und seine ökologische Bedeutung machen das Wattenmeer zu einem wichtigen Ziel für Naturliebhaber und Umweltschützer gleichermaßen.</p>
     </div>
+    </div>
 </div>
-<div class=" d-flex flex-column-reverse flex-md-row background-gradient2">
+
+
+<div class=" d-flex flex-column flex-md-row background-gradient2">
     <div class="col-md-6 p-5">
         <br><br>
         <h1 class="pt-5 mt-5">LOG</h1>
         <h1>BUCH</h1>
         <p class="colored">Jedes Schiff braucht eine Form des Logbuches, die jederzeit Verfügbar ist.</p>
-        <button class="buttonprimary">KOSTENLOS HERUNTERLADEN!</button>
+        <span class="cursive">Bald verfügbar.</span>
+        <!--<button class="buttonprimary">KOSTENLOS HERUNTERLADEN!</button>-->
     </div>
     <div>
         <img src="img/logbuch.png" class="img-fluid h-100 flex-grow-1 object-fit-cover" alt="...">
@@ -97,6 +105,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-</body>
 </body>
 </html>
