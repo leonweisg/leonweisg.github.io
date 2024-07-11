@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'RobotoR';
     src: url('../font/roboto.ttf') format('truetype'); /* Passe den Pfad entsprechend an */
@@ -100,25 +102,37 @@ h1 {
 /* Responsive Anpassungen */
 @media (max-width: 600px) {
     h1 {
-        font-size: 3rem;
+        font-size: 4rem; /* Erhöht die Schriftgröße von h1 für kleine Bildschirme */
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Erhöht die Schriftgröße von h2 für kleine Bildschirme */
     }
 
     .large {
-        font-size: 1.5rem;
+        font-size: 1.75rem; /* Erhöht die Schriftgröße der Klasse large für kleine Bildschirme */
     }
 
     .medium {
-        font-size: 1rem;
+        font-size: 1.25rem; /* Erhöht die Schriftgröße der Klasse medium für kleine Bildschirme */
+    }
+
+    .colored {
+        font-size: 1.25rem; /* Erhöht die Schriftgröße der Klasse colored für kleine Bildschirme */
+    }
+
+    p {
+        font-size: 1.25rem; /* Erhöht die Schriftgröße von p für kleine Bildschirme */
+    }
+
+    .cursive {
+        font-size: 1.25rem; /* Erhöht die Schriftgröße der Klasse cursive für kleine Bildschirme */
     }
 
     .buttonprimary {
         width: 100%;
         padding: 10px 0;
-        font-size: 1rem;
+        font-size: 1.2rem; /* Erhöht die Schriftgröße der Klasse buttonprimary für kleine Bildschirme */
     }
 
     .custom-bg-primary::before {
@@ -144,11 +158,11 @@ h1 {
         font-size: 2.25rem;
     }
     p {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
     }
 
     .cursive {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
     }
 
     .buttonprimary {
@@ -161,6 +175,18 @@ h1 {
     .custom-bg-primary::before {
         left: 15px;
         width: 4px;
+    }
+    #navlogo {
+        width: 70% !important;
+    }
+    .navList {
+        font-size: 2.5rem;
+    }
+    #copyright {
+        font-size: 2rem !important;
+    }
+    #impressumLink {
+        font-size: 2rem !important;
     }
 }
 
@@ -192,45 +218,3 @@ h1 {
         width: 5px;
     }
 }
-
-/* Flexbox und Grid Layouts */
-/*
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-
-.navbar a {
-    flex: 1 1 auto;
-    text-align: center;
-    padding: 10px;
-}
-
-.main-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-
-@media (min-width: 601px) {
-    .main-content {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 1025px) {
-    .main-content {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-img, video {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
- */
